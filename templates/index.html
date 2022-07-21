@@ -84,6 +84,9 @@ section {
   </form>
   
   <section id="section"><h2></h2></section>
+  <footer>
+    Copyright Vladislav Zakharenkov
+  </footer>
     
 </main>
 
@@ -99,7 +102,7 @@ section {
         csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
       },
       success: function(data){
-        $('h2').html("www.surls.ga/"+data)
+        $('h2').html("localhost:8000/"+data)
       }
     });
   });
